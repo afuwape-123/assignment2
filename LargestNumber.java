@@ -6,19 +6,20 @@ public class LargestNumber {
 		Scanner input = new Scanner(System.in);
 		
 		int num = 0;
-		int largestNumber = 0;
+		int largestNumber = 0;	
+		int counter = 0;
 		
-		
-		 
-		for(int counter = 0; counter <= 10; counter++);
-			 
-			 System.out.print("Enter the unit: ");
-			 int unit = input.nextInt();
+		while(counter < 10) {
+			 System.out.print("Enter number : ");
+			 num = input.nextInt();
 
 		if(num > largestNumber)
-			largestNumber += num;
+			largestNumber = num;
 		
+		counter += 1;
+		}
 		System.out.printf("the largest number is: %d%n", largestNumber);
-	}
+	
 
+}
 }
